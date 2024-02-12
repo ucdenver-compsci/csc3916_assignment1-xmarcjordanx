@@ -8,7 +8,7 @@ app.use(bodyParser.text({
     }
 }));
 
-app.post('/', {req, res}=> {
+app.post('/', (req, res)=> {
     console.log(req.body)
     res = res.status(200)
     var contentType = req.get('Content-Type');
